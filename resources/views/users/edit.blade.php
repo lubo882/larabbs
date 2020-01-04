@@ -19,7 +19,7 @@
                           enctype="multipart/form-data">
                         <input type="hidden" name="_method" value="PUT">
                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
-                        @include('shared._errors')
+                        @include('shared._error')
                         <div class="form-group">
                             <label for="name-field">用户名</label>
                             <input class="form-control" type="text" name="name" id="name-field" value="{{ old('name', $user->name) }}" />

@@ -27,7 +27,7 @@
 
                                     <input type="hidden" name="_token" value="{{ csrf_token() }}">
 
-                                    @include('shared._errors')
+                                    @include('shared._error')
 
                                     <div class="form-group">
                                         <input class="form-control" type="text" name="title" value="{{ old('title', $topic->title ) }}" placeholder="请填写标题" required />

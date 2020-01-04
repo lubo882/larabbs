@@ -27,7 +27,9 @@ class ReplyRequest extends Request
             case 'DELETE':
             default:
             {
-                return [];
+                return [
+                    'content' => 'required|min:2'
+                ];
             }
         }
     }
